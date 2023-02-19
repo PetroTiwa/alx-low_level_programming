@@ -4,7 +4,7 @@
 /**
  * main - main assign a random number to the variable 
  *
- * Return: Always 0 (Succesful)
+ * Return: Always 0 (Success)
  *
  */
 int main(void)
@@ -18,11 +18,11 @@ int main(void)
 	num = n % 10;
 
 
-	if (n > 5)
+	if (num > 5)
 	{
 		printf("%d and is greater than 5\n", num);
 	}
-	else if (n < 6)
+	else if (num < 6)
 	{
 		printf("%d and is less than 6 and not 0\n", num);
 	}
