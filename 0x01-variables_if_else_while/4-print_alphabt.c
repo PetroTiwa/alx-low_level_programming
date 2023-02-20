@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - Print all the letters except q and e
@@ -8,16 +7,15 @@
  */
 int main(void)
 {
-	char ch = 'a';
+	char alphabet;
 
-	while (ch < 'z')
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		if ((ch != 'e') && (ch != 'q'))
-		{
-			putchar(ch);
-		}
-		ch++;
+		if (alphabet != 'e' && alphabet != 'q')
+			putchar(alphabet);
 	}
+
 	putchar('\n');
+
 	return (0);
 }
